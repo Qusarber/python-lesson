@@ -1,11 +1,11 @@
-ms = [7,2,3,1,6]
+ms = [-1,7,2,3,1,6]
 k=0
 ms.sort()
 for i in range(len(ms)):
 	if k > ms[i]:
 		if k in ms:
 			k+=1
-		else:
+		elif k>0:
 			break
 	else:
 		k+=1
